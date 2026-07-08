@@ -1,0 +1,53 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: var(--font-size-label-sm);
+  line-height: var(--line-height-label-sm);
+  font-weight: var(--font-weight-label-sm-strong);
+  background: var(--color-bg-base-200);
+  color: var(--color-text-default);
+  white-space: nowrap;
+}
+
+.pill--ok {
+  background: var(--color-status-ok-bg);
+  color: var(--color-status-ok-text);
+}
+
+.pill--error {
+  background: var(--color-status-err-bg);
+  color: var(--color-status-err-text);
+}
+
+.pill--info {
+  background: var(--color-status-info-bg);
+  color: var(--color-status-info-text);
+}
+
+.pill--warn {
+  background: var(--color-status-warn-bg);
+  color: var(--color-status-warn-text);
+}
+
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: var(--radius-default);
+  font-size: var(--font-size-label-sm);
+  line-height: var(--line-height-label-sm);
+  font-family: var(--font-family-mono);
+  background: var(--color-bg-base-100);
+  border: 1px solid var(--color-border-default);
+  color: var(--color-text-default);
+}
+
+.tag-chip--skill {
+  font-family: var(--font-family-base);
+  background: #d9efe9;
+  border-color: transparent;
+  color: #0b4a3f;
+}

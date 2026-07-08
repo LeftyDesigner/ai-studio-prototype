@@ -1,0 +1,17 @@
+.app-layout__body {
+  display: flex;
+  align-items: flex-start;
+  min-height: calc(100vh - var(--header-height));
+}
+
+.app-layout__main {
+  flex: 1;
+  min-width: 0;
+  min-height: calc(100vh - var(--header-height));
+  padding: var(--screen-padding-default);
+  background: var(--color-bg-default);
+}
+
+.app-layout__main--gray {
+  background: var(--color-bg-base-100);
+}

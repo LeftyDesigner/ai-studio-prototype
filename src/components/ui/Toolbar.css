@@ -1,0 +1,74 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  padding: var(--space-100) var(--screen-padding-default);
+  margin: 0 calc(var(--screen-padding-default) * -1) var(--space-300);
+  background: var(--color-bg-default);
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.toolbar__group {
+  display: flex;
+  align-items: stretch;
+  gap: var(--space-300);
+}
+
+.toolbar__action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.toolbar__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 42px;
+  height: 24px;
+  padding: 0 var(--space-50);
+  border-radius: var(--radius-default);
+  background: var(--color-bg-base-200);
+  color: var(--color-icon-default);
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.toolbar__label {
+  font-size: var(--font-size-label-sm);
+  line-height: var(--line-height-label-sm);
+  color: var(--color-text-subtle);
+  white-space: nowrap;
+  transition: color 0.12s ease;
+}
+
+.toolbar__action:hover:not(:disabled) .toolbar__icon {
+  background: var(--color-bg-base-300);
+  color: var(--color-text-default);
+}
+
+.toolbar__action:hover:not(:disabled) .toolbar__label {
+  color: var(--color-text-default);
+}
+
+.toolbar__action:disabled {
+  cursor: not-allowed;
+}
+
+.toolbar__action:disabled .toolbar__icon,
+.toolbar__action:disabled .toolbar__label {
+  opacity: 0.5;
+}
+
+.toolbar__separator {
+  align-self: stretch;
+  width: 1px;
+  background: var(--color-border-default);
+}

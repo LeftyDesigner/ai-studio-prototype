@@ -1,0 +1,115 @@
+/*
+  Design tokens extracted from the Instrument Design System
+  (Figma: PL-3491 PAT ODS updates).
+*/
+:root {
+  /* Brand */
+  --color-brand-header-bg: #004f5f;
+  --color-brand-header-logo: #ffffff;
+
+  /* Text */
+  --color-text-default: rgba(0, 0, 0, 0.87);
+  --color-text-subtle: rgba(0, 0, 0, 0.6);
+  --color-text-on-brand: rgba(255, 255, 255, 0.92);
+  --color-text-on-brand-subtle: rgba(255, 255, 255, 0.66);
+  --color-text-link: #0d71af;
+
+  /* Backgrounds */
+  --color-bg-default: #ffffff;
+  --color-bg-base-100: #f5f5f5;
+  --color-bg-base-200: #e5e5e5;
+  --color-bg-base-300: #d4d4d4;
+  --color-bg-selected: rgba(82, 189, 236, 0.26);
+
+  /* Borders */
+  --color-border-default: #d4d4d4;
+
+  /* Icons */
+  --color-icon-default: rgba(0, 0, 0, 0.6);
+  --color-icon-on-brand: rgba(255, 255, 255, 0.66);
+  --color-icon-selected: #004f5f;
+
+  /* Tabs — Instrument Design System ".Tab" selected-state indicator */
+  --color-tab-indicator: #0d71af;
+
+  /* Value controls (checkbox, radio) — Instrument Design System "Checkbox 2.0" */
+  --color-control-border: #3f4d52;
+  --color-control-checked-bg: #138dc9;
+  --color-control-checked-bg-hover: #0f74a8;
+  --color-control-indeterminate-bg: #546e7a;
+  --color-control-indeterminate-bg-hover: #435a63;
+
+  /* Status */
+  --color-status-ok-bg: #e3f4e5;
+  --color-status-ok-text: #1f7a35;
+  --color-status-err-bg: #fbe6e6;
+  --color-status-err-text: #b3261e;
+  --color-status-info-bg: #e5f2fb;
+  --color-status-info-text: #0d71af;
+  --color-status-warn-bg: #fdf1de;
+  --color-status-warn-text: #a15c00;
+
+  /* Typography */
+  --font-family-base: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-family-mono: 'Source Code Pro', 'SFMono-Regular', Consolas, monospace;
+
+  --font-size-display-lg: 24px;
+  --line-height-display-lg: 30px;
+  --font-weight-display-lg: 700;
+
+  --font-size-headline-2: 22px;
+  --line-height-headline-2: 26px;
+  --font-weight-headline-2: 500;
+
+  --font-size-headline-3: 18px;
+  --line-height-headline-3: 22px;
+  --font-weight-headline-3: 600;
+
+  --font-size-headline-4: 16px;
+  --line-height-headline-4: 24px;
+  --font-weight-headline-4: 500;
+
+  --font-size-label-strong: 14px;
+  --line-height-label-strong: 21px;
+  --font-weight-label-strong: 600;
+
+  --font-size-label-default: 14px;
+  --line-height-label-default: 21px;
+  --font-weight-label-default: 400;
+
+  --font-size-body-default: 14px;
+  --line-height-body-default: 21px;
+  --font-weight-body-default: 400;
+
+  --font-size-body-strong: 14px;
+  --line-height-body-strong: 21px;
+  --font-weight-body-strong: 600;
+
+  --font-size-label-sm: 12px;
+  --line-height-label-sm: 18px;
+  --font-weight-label-sm: 400;
+
+  --font-size-label-sm-strong: 12px;
+  --line-height-label-sm-strong: 18px;
+  --font-weight-label-sm-strong: 600;
+
+  /* Spacing */
+  --space-25: 2px;
+  --space-50: 4px;
+  --space-100: 8px;
+  --space-150: 12px;
+  --space-200: 16px;
+  --space-300: 24px;
+  --space-400: 32px;
+
+  --screen-padding-default: 24px;
+
+  /* Layout */
+  --header-height: 64px;
+  --sidenav-width: 240px;
+  --radius-default: 4px;
+  --radius-lg: 8px;
+
+  /* Elevation */
+  --shadow-s: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}

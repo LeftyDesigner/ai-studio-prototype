@@ -1,0 +1,24 @@
+.def-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--space-200);
+}
+
+.def-list tr {
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.def-list tr:last-child {
+  border-bottom: none;
+}
+
+.def-list td {
+  padding: var(--space-100) 0;
+  font-size: var(--font-size-body-default);
+  vertical-align: middle;
+}
+
+.def-list td:first-child {
+  color: var(--color-text-subtle);
+  width: 180px;
+}
