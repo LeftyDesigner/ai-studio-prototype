@@ -37,6 +37,7 @@ export interface Agent {
   systemPrompt: string;
   boundTools: string[];
   usedSkills: string[];
+  subAgents?: string[];
 }
 
 export interface Template {
@@ -46,6 +47,7 @@ export interface Template {
   version: string;
   model: string;
   tools: string[];
+  systemPrompt: string;
 }
 
 export interface Skill {

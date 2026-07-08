@@ -46,7 +46,7 @@ export function TemplateDetail() {
           </p>
         </div>
         <div className="detail-header__actions">
-          <Button variant="primary" onClick={() => navigate(`/agents?template=${template.id}`)}>
+          <Button variant="primary" onClick={() => navigate(`/agents/new?template=${template.id}`)}>
             <IconPlus width={14} height={14} /> Add to Agents
           </Button>
         </div>

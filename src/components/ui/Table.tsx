@@ -125,14 +125,14 @@ export function EntityCell({
   meta,
   color = 'slate',
 }: {
-  icon: ReactNode;
+  icon?: ReactNode;
   name: string;
   meta?: string;
   color?: 'teal' | 'slate' | 'violet' | 'amber';
 }) {
   return (
     <div className="cell-primary">
-      <span className={`cell-avatar ${color}`}>{icon}</span>
+      {icon && <span className={`cell-avatar ${color}`}>{icon}</span>}
       <div>
         <div className="cell-primary__name">{name}</div>
         {meta && <div className="cell-primary__meta">{meta}</div>}

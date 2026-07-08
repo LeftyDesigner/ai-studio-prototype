@@ -24,7 +24,7 @@ export function AgentsList() {
       </div>
 
       <Toolbar>
-        <ToolbarLinkAction to="/templates" icon={<IconPlus width={16} height={16} />} label="New agent" />
+        <ToolbarLinkAction to="/agents/new" icon={<IconPlus width={16} height={16} />} label="Create agent" />
         <ToolbarAction
           icon={<IconBin width={16} height={16} />}
           label="Delete agent"

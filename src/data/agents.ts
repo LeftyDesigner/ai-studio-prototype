@@ -121,3 +121,8 @@ unless the user explicitly asks for notes or alternatives.`,
 export function getAgentById(id: string): Agent | undefined {
   return agents.find((a) => a.id === id);
 }
+
+/** Appends a newly created agent to the in-memory catalog (prototype-only persistence). */
+export function addAgent(agent: Agent): void {
+  agents.push(agent);
+}

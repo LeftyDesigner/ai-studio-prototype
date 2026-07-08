@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import { AppLayout } from './components/layout/AppLayout';
 import { Dashboard } from './pages/Dashboard';
 import { AgentsList } from './pages/Agents/AgentsList';
+import { AgentNew } from './pages/Agents/AgentNew';
 import { AgentDetail } from './pages/Agents/AgentDetail';
 import { Templates } from './pages/Templates';
 import { TemplateDetail } from './pages/TemplateDetail';
@@ -18,6 +19,7 @@ function App() {
         <Route index element={<Navigate to="/dashboard" replace />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="agents" element={<AgentsList />} />
+        <Route path="agents/new" element={<AgentNew />} />
         <Route path="agents/:agentId" element={<AgentDetail />} />
         <Route path="templates" element={<Templates />} />
         <Route path="templates/:templateId" element={<TemplateDetail />} />

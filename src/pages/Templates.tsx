@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { DataTable, EntityCell, DescriptionCell } from '../components/ui/Table';
 import { Button } from '../components/ui/Button';
-import { IconTemplates } from '../components/icons';
 import { templates } from '../data/templates';
 
 export function Templates() {
@@ -24,7 +23,7 @@ export function Templates() {
           {
             key: 'template',
             header: 'Template',
-            render: (t) => <EntityCell icon={<IconTemplates />} name={t.name} meta={t.version} color="slate" />,
+            render: (t) => <EntityCell name={t.name} meta={t.version} />,
           },
           { key: 'description', header: 'Description', render: (t) => <DescriptionCell text={t.description} /> },
           {
@@ -43,7 +42,7 @@ export function Templates() {
                 size="sm"
                 onClick={(e) => {
                   e.stopPropagation();
-                  navigate(`/agents?template=${t.id}`);
+                  navigate(`/agents/new?template=${t.id}`);
                 }}
               >
                 Add to Agents

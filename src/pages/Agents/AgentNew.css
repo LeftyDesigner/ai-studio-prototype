@@ -1,0 +1,91 @@
+.agent-form {
+  max-width: 760px;
+}
+
+.agent-form__section {
+  margin-top: var(--space-300);
+}
+
+.agent-form__section-hint {
+  font-weight: 400;
+  text-transform: none;
+  font-size: var(--font-size-label-sm);
+  margin-left: 4px;
+}
+
+.agent-form__actions {
+  display: flex;
+  gap: var(--space-100);
+  margin-top: var(--space-300);
+}
+
+.selectable-list {
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-default);
+  margin-bottom: var(--space-150);
+  overflow: hidden;
+}
+
+.selectable-list__group-title {
+  padding: var(--space-100) var(--space-150);
+  font-size: var(--font-size-label-sm-strong);
+  font-weight: var(--font-weight-label-strong);
+  color: var(--color-text-default);
+  background: var(--color-bg-base-100);
+  border-bottom: 1px solid var(--color-border-default);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.selectable-list__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-100);
+  padding: var(--space-100) var(--space-150);
+  cursor: pointer;
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.selectable-list__item:last-child {
+  border-bottom: none;
+}
+
+.selectable-list__item:hover {
+  background: var(--color-bg-base-100);
+}
+
+.selectable-list__item .checkbox {
+  margin-top: 3px;
+}
+
+.selectable-list__item-name {
+  font-size: var(--font-size-label-default);
+  font-weight: var(--font-weight-label-strong);
+  color: var(--color-text-default);
+}
+
+.selectable-list__item-desc {
+  font-size: var(--font-size-label-sm);
+  color: var(--color-text-subtle);
+  margin-top: 2px;
+}
+
+.radio-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-100);
+  margin-bottom: var(--space-200);
+}
+
+.radio-row__option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-100);
+  font-size: var(--font-size-body-default);
+  color: var(--color-text-default);
+  cursor: pointer;
+}
+
+.radio-row__option input[type='radio'] {
+  accent-color: var(--color-icon-selected);
+}
