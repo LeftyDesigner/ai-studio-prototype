@@ -49,6 +49,7 @@
   align-items: center;
   gap: var(--space-150);
   flex-shrink: 0;
+  position: relative;
 }
 
 .app-header__avatar {
@@ -59,10 +60,53 @@
   align-items: center;
   justify-content: center;
   color: var(--color-icon-on-brand);
+  background: none;
+  border: none;
+  padding: 0;
   cursor: pointer;
   transition: color 0.12s ease;
 }
 
 .app-header__avatar:hover {
   color: var(--color-text-on-brand);
+}
+
+.app-header__menu {
+  position: absolute;
+  top: calc(100% + var(--space-100));
+  right: 0;
+  min-width: 160px;
+  background: var(--color-bg-default);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-default);
+  box-shadow: var(--shadow-s);
+  padding: var(--space-50);
+  z-index: 30;
+}
+
+.app-header__menu-user {
+  padding: var(--space-100) var(--space-100) var(--space-50);
+  font-size: var(--font-size-label-sm);
+  color: var(--color-text-subtle);
+  border-bottom: 1px solid var(--color-border-default);
+  margin-bottom: var(--space-50);
+  word-break: break-all;
+}
+
+.app-header__menu-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: var(--space-100);
+  border-radius: var(--radius-default);
+  font-size: var(--font-size-label-default);
+  font-family: inherit;
+  color: var(--color-text-default);
+  cursor: pointer;
+}
+
+.app-header__menu-item:hover {
+  background: var(--color-bg-base-100);
 }

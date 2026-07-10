@@ -1,5 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { AppLayout } from './components/layout/AppLayout';
+import { ProtectedRoute } from './components/layout/ProtectedRoute';
+import { Login } from './pages/Login';
 import { Dashboard } from './pages/Dashboard';
 import { AgentsList } from './pages/Agents/AgentsList';
 import { AgentNew } from './pages/Agents/AgentNew';
@@ -16,21 +18,24 @@ import { Audit } from './pages/Audit';
 function App() {
   return (
     <Routes>
-      <Route element={<AppLayout />}>
-        <Route index element={<Navigate to="/dashboard" replace />} />
-        <Route path="dashboard" element={<Dashboard />} />
-        <Route path="agents" element={<AgentsList />} />
-        <Route path="agents/new" element={<AgentNew />} />
-        <Route path="agents/:agentId" element={<AgentDetail />} />
-        <Route path="templates" element={<Templates />} />
-        <Route path="templates/:templateId" element={<TemplateDetail />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="skills/new" element={<SkillNew />} />
-        <Route path="skills/:skillId" element={<SkillDetail />} />
-        <Route path="tools" element={<Tools />} />
-        <Route path="playground" element={<Playground />} />
-        <Route path="audit" element={<Audit />} />
-        <Route path="*" element={<Navigate to="/dashboard" replace />} />
+      <Route path="login" element={<Login />} />
+      <Route element={<ProtectedRoute />}>
+        <Route element={<AppLayout />}>
+          <Route index element={<Navigate to="/dashboard" replace />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="agents" element={<AgentsList />} />
+          <Route path="agents/new" element={<AgentNew />} />
+          <Route path="agents/:agentId" element={<AgentDetail />} />
+          <Route path="templates" element={<Templates />} />
+          <Route path="templates/:templateId" element={<TemplateDetail />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="skills/new" element={<SkillNew />} />
+          <Route path="skills/:skillId" element={<SkillDetail />} />
+          <Route path="tools" element={<Tools />} />
+          <Route path="playground" element={<Playground />} />
+          <Route path="audit" element={<Audit />} />
+          <Route path="*" element={<Navigate to="/dashboard" replace />} />
+        </Route>
       </Route>
     </Routes>
   );
