@@ -1,0 +1,9 @@
+.skill-form {
+  max-width: 760px;
+}
+
+.skill-form__actions {
+  display: flex;
+  gap: var(--space-100);
+  margin-top: var(--space-300);
+}

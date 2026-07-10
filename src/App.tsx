@@ -7,6 +7,7 @@ import { AgentDetail } from './pages/Agents/AgentDetail';
 import { Templates } from './pages/Templates';
 import { TemplateDetail } from './pages/TemplateDetail';
 import { Skills } from './pages/Skills';
+import { SkillNew } from './pages/SkillNew';
 import { SkillDetail } from './pages/SkillDetail';
 import { Tools } from './pages/Tools';
 import { Playground } from './pages/Playground';
@@ -24,6 +25,7 @@ function App() {
         <Route path="templates" element={<Templates />} />
         <Route path="templates/:templateId" element={<TemplateDetail />} />
         <Route path="skills" element={<Skills />} />
+        <Route path="skills/new" element={<SkillNew />} />
         <Route path="skills/:skillId" element={<SkillDetail />} />
         <Route path="tools" element={<Tools />} />
         <Route path="playground" element={<Playground />} />

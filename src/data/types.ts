@@ -56,6 +56,7 @@ export interface Skill {
   description: string;
   avatarColor: 'teal' | 'slate' | 'violet' | 'amber';
   path: string;
+  body?: string;
 }
 
 export interface ToolDef {

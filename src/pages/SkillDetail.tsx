@@ -51,6 +51,18 @@ export function SkillDetail() {
           { label: 'ID', value: <code>{skill.id}</code> },
         ]}
       />
+
+      {skill.body && (
+        <>
+          <h6
+            className="section-title"
+            style={{ fontSize: 13, textTransform: 'uppercase', color: 'var(--color-text-subtle)' }}
+          >
+            Body
+          </h6>
+          <pre className="system-prompt">{skill.body}</pre>
+        </>
+      )}
     </div>
   );
 }

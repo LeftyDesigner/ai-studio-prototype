@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { DataTable, EntityCell, DescriptionCell } from '../components/ui/Table';
-import { Toolbar, ToolbarAction } from '../components/ui/Toolbar';
+import { Toolbar, ToolbarAction, ToolbarLinkAction } from '../components/ui/Toolbar';
 import { IconModule, IconPlus, IconBin } from '../components/icons';
 import { skills as initialSkills } from '../data/skills';
 
@@ -29,7 +29,7 @@ export function Skills() {
       </div>
 
       <Toolbar>
-        <ToolbarAction icon={<IconPlus width={16} height={16} />} label="New skill" />
+        <ToolbarLinkAction to="/skills/new" icon={<IconPlus width={16} height={16} />} label="Create skill" />
         <ToolbarAction
           icon={<IconBin width={16} height={16} />}
           label="Delete skill"
