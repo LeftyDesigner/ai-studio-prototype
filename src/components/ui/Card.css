@@ -24,8 +24,6 @@
 .metric-card__label {
   font-size: var(--font-size-label-sm-strong);
   color: var(--color-text-subtle);
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
 }
 
 .metric-card__value {

@@ -37,7 +37,7 @@ export function Dashboard() {
     <div>
       <div className="page-header">
         <div>
-          <h2 className="page-title">Observability Dashboard</h2>
+          <h2 className="page-title">Observability dashboard</h2>
           <p className="page-subtitle">
             Platform-wide usage metrics and activity monitoring. Aggregated from agent run history.
           </p>
@@ -63,7 +63,7 @@ export function Dashboard() {
 
       <div className="metrics-grid">
         <MetricCard
-          label="Total Runs"
+          label="Total runs"
           value={totalRuns}
           sub={
             <>
@@ -72,10 +72,10 @@ export function Dashboard() {
             </>
           }
         />
-        <MetricCard label="Total Tokens" value={totalTokens.toLocaleString()} sub="all time" />
-        <MetricCard label="Avg Latency" value={`${avgLatency}ms`} sub="per completed run" />
+        <MetricCard label="Total tokens" value={totalTokens.toLocaleString()} sub="all time" />
+        <MetricCard label="Avg latency" value={`${avgLatency}ms`} sub="per completed run" />
         <MetricCard
-          label="Active Agents"
+          label="Active agents"
           value={agents.length}
           sub={`${modelsUsed} model(s) used`}
         />
@@ -83,7 +83,7 @@ export function Dashboard() {
 
       <div className="grid-2" style={{ marginTop: 24 }}>
         <div>
-          <h4 className="section-title">Agent Usage</h4>
+          <h4 className="section-title">Agent usage</h4>
           <DataTable
             columns={[
               {
@@ -99,7 +99,7 @@ export function Dashboard() {
               { key: 'tokens', header: 'Tokens', align: 'right', render: (row) => row.tokens.toLocaleString() },
               {
                 key: 'pct',
-                header: '% of Total',
+                header: '% of total',
                 align: 'right',
                 render: (row) =>
                   totalUsageTokens ? `${Math.round((row.tokens / totalUsageTokens) * 100)}%` : '0%',
@@ -111,11 +111,11 @@ export function Dashboard() {
         </div>
 
         <div>
-          <h4 className="section-title">Run Activity</h4>
+          <h4 className="section-title">Run activity</h4>
           <ActivityChart days={activity} />
 
           <h4 className="section-title" style={{ marginTop: 24 }}>
-            Connected Tools
+            Connected tools
           </h4>
           <Card>
             {toolkits.length === 0 ? (
